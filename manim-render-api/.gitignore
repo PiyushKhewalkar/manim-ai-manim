@@ -1,0 +1,26 @@
+# Python Bytecode Files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual Environments
+venv/
+env/
+.env/
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Manim related files (cache, videos, etc.)
+media/
+*.mp4
+
+# System files
+.DS_Store
+Thumbs.db
+
+# AWS Credentials (Never push keys to GitHub!)
+config.py

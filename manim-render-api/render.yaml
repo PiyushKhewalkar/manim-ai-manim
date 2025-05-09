@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: manim-api
+    env: python
+    buildCommand: "apt-get update && apt-get install -y ffmpeg libcairo2 xvfb"
+    startCommand: "xvfb-run uvicorn main:app --host=0.0.0.0 --port=10000"
+    envVars:
+      - key: AWS_ACCESS_KEY_ID
+        value: your-access-key
+      - key: AWS_SECRET_ACCESS_KEY
+        value: your-secret-key
+      - key: AWS_REGION
+        value: ap-south-1
+      - key: S3_BUCKET_NAME
+        value: your-bucket

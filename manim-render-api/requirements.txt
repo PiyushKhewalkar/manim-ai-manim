@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+manim
+boto3
+ffmpeg-python
