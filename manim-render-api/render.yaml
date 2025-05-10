@@ -1,9 +1,9 @@
 services:
   - type: web
     name: manim-api
-    env: python
-    buildCommand: "apt-get update && apt-get install -y ffmpeg libcairo2 xvfb"
-    startCommand: "xvfb-run uvicorn main:app --host=0.0.0.0 --port=10000"
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
     envVars:
       - key: AWS_ACCESS_KEY_ID
         value: your-access-key
