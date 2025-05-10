@@ -1,5 +1,7 @@
 FROM python:3.10-slim
 
+EXPOSE 10000
+
 # Install system packages
 RUN apt-get update && apt-get install -y \
     ffmpeg \
